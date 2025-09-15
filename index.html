@@ -112,9 +112,10 @@
 <body>
 
   <!-- 🎵 Música -->
-  <audio id="musica" loop hidden>
-    <source src="FELIZ.mp3" type="audio/mp3">
-  </audio>
+<audio id="musica" autoplay loop>
+  <source src="musica.mp3" type="audio/mp3">
+  Tu navegador no soporta audio en HTML5.
+</audio>
 
   <div class="card">
     <div class="imgBox">
@@ -130,13 +131,9 @@
     </div>
   </div>
 
-<script>
-  document.body.addEventListener("click", function() {
-    const audio = document.getElementById("musica");
-    audio.play();
-  }, { once: true });
-</script>
+
 
 </body>
 </html>
+
 
